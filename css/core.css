@@ -1,0 +1,255 @@
+/*
+  Theme: Golden Glory
+  File: core.css
+  Site: legaldemo.pearance.net
+
+  Created by Fontaine Cook on 2010-08-21.
+  Copyright 2010 Pearance. All rights reserved.
+*/
+
+
+
+/**
+ * GLOBAL HTML ELEMENTS
+ */
+html, body {
+  color: #666666;
+  min-height:101%;
+  background:#584130 url(../gfx/bg-lite.jpg) fixed no-repeat;
+}
+
+a {
+  color: #ffcc33;
+  text-decoration:none;
+}
+
+table {
+  width:100%;
+}
+/******************************************************************************/
+
+
+
+
+
+
+
+
+
+/**
+ * GLOBAL REGIONS & CONTENT
+ */
+
+/* Header */
+#header, #header-lining, #header-content {
+  height:120px;
+}
+
+#header {
+  color:#ffcc33;
+  background:url(../gfx/header-bg.jpg) repeat-x;
+}
+
+#header-lining {
+  max-width:1000px;
+  margin:0 auto;
+  background:url(../gfx/logo-bg.png) no-repeat;
+}
+
+#header-content {
+}
+
+#branding {
+}
+
+#branding a {
+  margin-top:20px;
+  display:block;
+}
+
+#site-name, #site-slogan {
+  display:none;
+}
+
+#user-menu {
+  margin-top:5px;
+}
+/* -------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+/* Navigation */
+#navigation {
+  height:40px;
+  background:#000;
+}
+
+#navigation-lining {
+  max-width:1000px;
+  margin:0 auto;
+}
+
+#navigation-content {
+}
+
+#site-menu {
+  margin:7px 0 0;
+}
+
+#site-menu li a {
+  font-size:16px;
+}
+
+#site-menu li a.active {
+  background:#ffcc33;
+  margin:0;
+  padding:3px;
+  display:inline;
+  border-radius:5px;
+}
+
+#site-menu ul.main-menu {
+  display: block;
+}
+
+.region-search-box .container-inline {
+  white-space: nowrap;
+}
+
+.region-search-box .contextual-links-wrapper {
+  top: -20px;
+}
+/******************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+/* Body */
+#body {
+}
+
+#body-lining {
+  max-width:980px;
+  margin:0 auto;
+  background:url(../gfx/body-lining-bg.png) repeat-y;
+}
+
+.no-sidebars #body-lining {
+  max-width:980px;
+  margin:0 auto;
+  background: url(../gfx/no-sidebars-body-lining-bg.png) repeat-y;
+}
+
+#body-content {
+  background:url(../gfx/body-content-bg.png) repeat-x;
+}
+/* -------------------------------------------------------------------------- */
+
+
+
+/* Feature */
+#feature {
+  height:300px;
+  background:url(../gfx/showcase-bg.jpg) no-repeat;
+}
+/* -------------------------------------------------------------------------- */
+
+
+
+/* Main */
+#messages {
+  margin:20px 0;
+}
+
+#content {
+}
+/* -------------------------------------------------------------------------- */
+
+
+
+/* Sidebar First */
+#sidebar-first {
+}
+
+#sidebar-first-lining {
+}
+/* -------------------------------------------------------------------------- */
+
+
+
+.field-type-taxonomy-term-reference .field-item {
+  display: inline;
+  margin: 0 .25em;
+}
+
+.node .field-name-body {
+  margin: 10px 0;
+}
+
+/* content footer */
+.item-list .pager {
+  text-align: inherit;
+}
+
+.item-list .pager li {
+  margin: 0;
+}
+/* -------------------------------------------------------------------------- */
+
+
+/* Footer */
+#footer, #footer-lining, #footer-content {
+  height:120px;
+}
+
+#footer {
+  color:#ffcc33;
+  background:url(../gfx/footer-bg.jpg) repeat-x;
+}
+/* -------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ *  * UTILITY CLASSES
+ *   */
+.center {text-align:center;}
+
+/* Tuck text off the screen but still visible to indexers */
+.tuck {position:absolute; left:-3000px;}
+
+/* Quickly highlight any element by setting its background color to x. */
+.shoy {background:yellow;}
+.shor {background:red;}
+.shog {background:green;}
+.shoo {background:orange;}
+
+/* Quickly highlight any element by wrapping it in a yellow border. */
+.showo {border:1px solid yellow;}
+
+.large {font-size:26px;}
+.small {font-size:16px;}
+.special {font-family: Helvetica, sans-serif;}

@@ -1,0 +1,225 @@
+/**
+ * Dynamic display block module template:onslide-40p-B - Cascading Style Sheet 
+ * (c) Copyright Phelsa Information Technology 2009 - 2010. All rights reserved.
+ * Version 1.0(08-JAN-2010)   
+ */
+ 
+div.ddblock-cycle-onslide-40p-B div.container{
+/*styling*/ 
+background:transparent url(images/background_container.png) repeat scroll 0 0;
+}
+div.ddblock-cycle-onslide-40p-B div.container-inner{
+/*styling*/
+border:1px solid #999;
+/*layout other*/
+padding:5px 5px 0px 5px;position:relative;
+}
+div.ddblock-cycle-onslide-40p-B div.slider{
+/*layout other*/
+float:left;
+}
+div.ddblock-cycle-onslide-40p-B div.slider-inner{
+/*styling*/ 
+background:transparent url(images/transparent_bg.png) repeat scroll 0 0;
+/*layout other*/
+overflow:hidden;position:relative;visibility:hidden;
+}
+div.ddblock-cycle-onslide-40p-B div.slide{
+/*layout other*/
+display:none;height:100%;left:0;position:absolute;top:0;
+}
+div.ddblock-cycle-onslide-40p-B div.slide-inner img{
+/*layout other*/
+margin:0 !important;padding:0 !important;
+}
+div.ddblock-cycle-onslide-40p-B div.slide-text{
+/*styling*/
+  background:transparent url(images/transparent_bg.png) repeat scroll 0 0;position:absolute;
+}
+div.ddblock-cycle-onslide-40p-B div.slide-text-horizontal{
+/*layout other*/
+  height:100px;
+}
+div.ddblock-cycle-onslide-40p-B div.slide-text-vertical{
+/*layout other*/
+  height:245px;
+}
+div.ddblock-cycle-onslide-40p-B div.slide-text-top-top{
+/*layout other*/
+  left:0px;top:50px;
+}
+div.ddblock-cycle-onslide-40p-B div.slide-text-top-right{
+/*layout other*/
+  right:5px;bottom:5px;
+}
+div.ddblock-cycle-onslide-40p-B div.slide-text-top-bottom{
+/*layout other*/
+  left:0px;bottom:5px;
+}
+div.ddblock-cycle-onslide-40p-B div.slide-text-top-left{
+/*layout other*/
+  left:5px;bottom:5px;
+}
+div.ddblock-cycle-onslide-40p-B div.slide-text-bottom-top{
+/*layout other*/
+  left:0px;top:5px;
+}
+div.ddblock-cycle-onslide-40p-B div.slide-text-bottom-right{
+/*layout other*/
+  right:5px;bottom:50px;
+}
+div.ddblock-cycle-onslide-40p-B div.slide-text-bottom-bottom{
+/*layout other*/
+  left:0px;bottom:50px;
+}
+div.ddblock-cycle-onslide-40p-B div.slide-text-bottom-left{
+/*layout other*/
+  left:5px;bottom:50px;
+}
+div.ddblock-cycle-onslide-40p-B div.slide-text-inner{
+/*layout other*/
+padding:10px 0 0 5px;
+}
+div.ddblock-cycle-onslide-40p-B div.slide-title{
+/*layout other*/
+float:left;
+}
+div.ddblock-cycle-onslide-40p-B div.slide-title-vertical{
+/*layout other*/
+width:180px;
+}
+div.ddblock-cycle-onslide-40p-B div.slide-title-horizontal{
+/*layout other*/
+float:left;width:180px;
+}
+div.ddblock-cycle-onslide-40p-B div.slide-title h2{
+/*layout other*/
+margin:-5px 0 0 0;padding:0;
+}
+div.ddblock-cycle-onslide-40p-B div.slide-title-inner{
+/*styling*/
+color:white;font-weight:bold;
+}
+div.ddblock-cycle-onslide-40p-B div.slide-body-vertical{
+width:180px;
+}
+div.ddblock-cycle-onslide-40p-B div.slide-body-horizontal{
+float:left;width:400px;
+}
+div.ddblock-cycle-onslide-40p-B div.slide-body-inner{
+color:white;
+}
+div.ddblock-cycle-onslide-40p-B div.slide-body-inner p{
+margin:0 8px 0 0;padding:0;
+}
+
+/* readmore button */
+div.ddblock-cycle-onslide-40p-B div.slide-read-more{
+/* layout other*/
+  position:absolute;z-index:50;
+}
+div.ddblock-cycle-onslide-40p-B div.slide-read-more-top-top{
+/* layout other*/
+  right:5px;top:115px;
+}
+div.ddblock-cycle-onslide-40p-B div.slide-read-more-top-right{
+/* layout other*/
+  bottom:10px;right:10px;
+} 
+div.ddblock-cycle-onslide-40p-B div.slide-read-more-top-bottom{
+/* layout other*/
+  bottom:10px;right:5px;
+}
+div.ddblock-cycle-onslide-40p-B div.slide-read-more-top-left{
+/* layout other*/
+  bottom:10px;left:75px;
+}
+div.ddblock-cycle-onslide-40p-B div.slide-read-more-bottom-top{
+/* layout other*/
+  right:5px;top:70px;
+}
+div.ddblock-cycle-onslide-40p-B div.slide-read-more-bottom-right{
+/* layout other*/
+  bottom:55px;right:8px;
+} 
+div.ddblock-cycle-onslide-40p-B div.slide-read-more-bottom-bottom{
+/* layout other*/
+  bottom:55px;right:5px;
+}
+div.ddblock-cycle-onslide-40p-B div.slide-read-more-bottom-left{
+/* layout other*/
+  bottom:55px;left:75px;
+}
+div.ddblock-cycle-onslide-40p-B div.slide-read-more a {
+/* layout other*/
+  display:block;height:24px;margin:0;padding:3px 0 3px 20px;width:105px;z-index:50;
+/*styling*/
+  background:transparent url(images/readmorebutton.png) no-repeat scroll 0 0;color:#000000;font-size:13px;font-family:Arial,Helvetica,sans-serif;font-weight:bold;line-height:22px;text-align:center;
+}
+div.ddblock-cycle-onslide-40p-B div.slide-read-more a:hover{
+/*styling*/
+  background:transparent url(images/readmorebutton.png) no-repeat scroll 0 -30px;text-decoration:none;color:#ffffff;
+}
+div.ddblock-cycle-onslide-40p-B div.slide-read-more a:focus{
+/*styling*/
+  outline:none;
+}
+
+/*custom pager */
+div.ddblock-cycle-onslide-40p-B div.custom-pager{
+/*layout other*/
+display:block;width:690px;position:absolute;visibility:visible;margin:0!important;padding:0!important;z-index:100;left:7px;
+}
+div.ddblock-cycle-onslide-40p-B div.custom-pager-top{
+/*layout other*/
+top:5px;
+}
+div.ddblock-cycle-onslide-40p-B div.custom-pager-bottom{
+/*layout other*/
+bottom:5px;
+}
+div.ddblock-cycle-onslide-40p-B div.custom-pager-inner{
+/*layout other*/
+height:40px;
+}
+div.ddblock-cycle-onslide-40p-B div.custom-pager .custom-pager-item{
+/*layout other*/
+float:left;
+}
+div.ddblock-cycle-onslide-40p-B div.custom-pager .custom-pager-item-inner{
+/*layout other*/
+width:64px;
+}
+div.ddblock-cycle-onslide-40p-B div.custom-pager a{
+/*styling*/
+border:2px solid #ffff63;opacity:1;
+/*layout other*/
+display:block;float:left;height:35px;width:60px;
+}
+div.ddblock-cycle-onslide-40p-B div.custom-pager a.activeSlide{
+/*styling*/
+border:2px solid #ff886f;opacity:1;
+}
+div.ddblock-cycle-onslide-40p-B div.custom-pager a:hover{
+/*styling*/
+border:2px solid #ff886f;opacity:1;
+}
+div.ddblock-cycle-onslide-40p-B div.custom-pager a:focus{
+/*styling*/
+outline:none;
+}
+div.ddblock-cycle-onslide-40p-B div.custom-pager img{
+/*styling*/
+border:none;height:35px;margin:0!important;width:60px;
+}
+div.ddblock-cycle-onslide-40p-B div.spacer-vertical{
+/*styling*/
+display:block;float:left;height:40px;width:4px;
+}
+div.ddblock-cycle-onslide-40p-B div.spacer-horizontal{
+/*styling*/
+clear:both;height:5px;
+}
+ 
+ 
+ 

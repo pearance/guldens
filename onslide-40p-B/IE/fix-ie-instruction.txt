@@ -1,0 +1,58 @@
+Instructions to fix IE6 Transparency issues.
+
+Background Information
+----------------------
+
+IE6 does not support translucent PNG24 images, so for IE6 PNG8 images are used.
+In PNG8 images a pixel is transparent or has a color.
+
+To handle this issue a CSS file for IE6 needs to be created or when your theme already has a file for this the code to use the PNG8 images can be placed in this file.
+
+In these instruction we will use mygarland, a copy of the Garland theme in sites/all/modules as an example. 
+In mygarland, the code to add conditional CSS file is called from the page.tpl.php file
+
+<!--[if lt IE 7]>
+  <?php print phptemplate_get_ie_styles(); ?>
+<![endif]-->
+
+<!--[if lt IE 7]> means that this code is used only for IE lesser then version 7
+The code calls a function in the template.php file which adds the conditinal stylesheets
+
+function phptemplate_get_ie_styles() {
+  global $language;
+
+  $iecss = '<link type="text/css" rel="stylesheet" media="all" href="'. base_path() . path_to_theme() .'/fix-ie.css" />';
+  if ($language->direction == LANGUAGE_RTL) {
+    $iecss .= '<style type="text/css" media="all">@import "'. base_path() . path_to_theme() .'/fix-ie-rtl.css";</style>';
+  }
+
+  return $iecss;
+}
+
+The result HTML code in the page.tpl.php file, for left to right langauages, would be:
+<!--[if lt IE 7]>  
+<link type="text/css" rel="stylesheet" media="all" href="[www.example.com]/sites/all/themes/mygarland/fix-ie.css"/>;
+<![endif]-->
+
+Instructions
+------------
+
+1. Find or create a fix-ie.css file in your sites/all/themes/[your_theme] directory
+
+e.g sites/all/themes/mygarland/fix-ie.css
+
+When no IE6 specific CSS file is used in the theme you use, you need to create a fix-ie.css file and call it from your page.tpl.php file in your theme, like in the background information given above.
+
+2. Add the following code to the fix-ie.css file:
+
+div.ddblock-cycle-onslide-40p-B div.slide-text{
+ background:transparent url(custom/modules/ddblock/onslide-40p-B/images/transparent_bg_333.png) repeat scroll 0 0;
+}
+div.ddblock-cycle-onslide-40p-B div.slide-read-more a{
+ background:transparent url(custom/modules/ddblock/onslide-40p-B/images/readmorebutton_ie.png) repeat scroll 0 0;
+}
+div.ddblock-cycle-onslide-40p-B div.slide-read-more a:hover{
+ background:transparent url(custom/modules/ddblock/onslide-40p-B/images/readmorebutton_ie.png) no-repeat scroll 0 -30px;
+}
+
+The images for the default colors are already available.

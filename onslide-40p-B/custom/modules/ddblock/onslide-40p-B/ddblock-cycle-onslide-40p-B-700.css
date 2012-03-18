@@ -1,0 +1,30 @@
+/**
+ * Dynamic display block module template:onslide-40p-B-700 - Cascading Style Sheet 
+ * (c) Copyright Phelsa Information Technology 2009 - 2010. All rights reserved. 
+ * Version 1.0(08-JAN-2010)
+ */  
+ 
+/*
+container-inner width = container width minus (2 x padding) - (2 x border)
+e.g 
+      = 700 - (2 x 5) - (2 x 1)
+      = 700 - 12
+ container-inner width  = 688
+
+container-inner width,slider width, slider-inner img width are all the same size
+*/
+ 
+div.ddblock-cycle-onslide-40p-B div.container{width:700px;}
+div.ddblock-cycle-onslide-40p-B div.container-inner{height:305px;width:688px;}
+div.ddblock-cycle-onslide-40p-B div.slider{width:688px;}
+div.ddblock-cycle-onslide-40p-B div.slider-inner{height:300px;}
+div.ddblock-cycle-onslide-40p-B div.slide{height:300px;width:688px;}
+div.ddblock-cycle-onslide-40p-B div.slide-inner img{height:300px;width:688px;}
+div.ddblock-cycle-onslide-40p-B div.slide-text-horizontal{width:688px;}
+div.ddblock-cycle-onslide-40p-B div.slide-text-vertical{width:200px;}
+div.ddblock-cycle-onslide-40p-B div.slide-title-horizontal{width:500px;}
+div.ddblock-cycle-onslide-40p-B div.slide-title-vertical{width:180px;}
+div.ddblock-cycle-onslide-40p-B div.slide-body-horizontal{width:600px;}
+div.ddblock-cycle-onslide-40p-B div.slide-body-vertical{width:180px;}
+
+

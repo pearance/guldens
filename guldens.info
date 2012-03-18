@@ -1,0 +1,49 @@
+
+name = Guldens
+description = A clean gold and brown theme.
+base theme = ninesixty
+core = 7.x
+engine = phptemplate
+
+; Screenshot
+screenshot              = gfx/screenshot.png
+
+; Style sheets.
+stylesheets[all][] = css/core.css
+
+; Block regions.
+regions[page_top]       = Page top
+regions[header1]        = Header 1
+regions[header2]        = Header 2
+regions[search_box]     = Search box
+regions[help]           = Help
+regions[highlighted]    = Highlighted
+regions[feature]        = Feature
+regions[content_top]    = Content top
+regions[content]        = Content
+regions[sidebar_first]  = Sidebar
+regions[footer]         = Footer
+regions[page_bottom]    = Page bottom
+
+; Float these style sheet above others.
+settings[css_float][] = reset.css
+settings[css_float][] = text.css
+
+; This is used to target the 960 styles set from the 'stylesheets' key. Based on the
+; options and selection below, this target will be replaced with one of the options.
+settings[ns_columns_target] = 960.css
+
+; Setup all the possible 960 style options.
+settings[ns_columns_option][12+16] = 960.css
+settings[ns_columns_option][12]    = 960-12-col.css
+settings[ns_columns_option][16]    = 960-16-col.css
+settings[ns_columns_option][24]    = 960-24-col.css
+
+; Select which to use from the options set above.
+settings[ns_columns_select] = 12+16
+
+; Column debug style. Will bind to anything set for ns_columns_option.
+settings[ns_columns_debug_css] = 960-debug.css
+
+; Enable/disable debug style.
+settings[ns_columns_debug] = 0
